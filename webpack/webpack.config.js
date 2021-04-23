@@ -1,5 +1,5 @@
 const path = require("path");
-bundle;
+
 const nodeExternals = require("webpack-node-externals");
 
 const cwd = process.cwd();
