@@ -44,10 +44,10 @@ const generateAsyncApi = async () => {
   const workerPath = path.join(cwd, workerPackage);
   const asyncApiConfigPath = path.join(workerPath, asyncApiConfig);
 
-  const userSignUpPath = path.join(cwd, "./src/modules/userSignUp");
+  const userSignUpPath = path.join(cwd, "./src/modules");
   const userSignUpPathRegex = `${userSignUpPath}/**/*.yml`;
 
-  const userSignInPath = path.join(cwd, "./src/modules/userSignIn");
+  const userSignInPath = path.join(cwd, "./src/modules");
   const userSignPathRegex = `${userSignInPath}/**/*.yml`;
 
   const args = [
@@ -58,6 +58,8 @@ const generateAsyncApi = async () => {
     userSignPathRegex,
     "-o",
   ];
+
+  console.log("args", args);
 
   const argsYml = [...args, "./src/asyncApi/asyncapi.yml"];
   const argsJson = [...args, "./src/asyncApi/asyncapi.json"];
