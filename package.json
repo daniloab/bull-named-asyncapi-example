@@ -24,6 +24,7 @@
     "babel-loader": "8.2.1",
     "clean-webpack-plugin": "3.0.0",
     "reload-server-webpack-plugin": "1.0.1",
+    "swagger-jsdoc": "^7.0.0-rc.6",
     "webpack": "5.4.0",
     "webpack-cli": "4.2.0",
     "webpack-dev-server": "3.11.0",
@@ -34,7 +35,9 @@
   "main": "index.js",
   "scripts": {
     "b": "babel-node --extensions \".es6,.js,.es,.jsx,.mjs,.ts,.tsx\"",
-    "send-message": "yarn w ./script/callJob.ts",
+    "asyncapi": "yarn w ./script/generateAsyncApi.ts",
+    "user-sign-in": "yarn w ./script/callUserSignIn.ts",
+    "user-sign-up": "yarn w ./script/callUserSignUp.ts",
     "start": "webpack --watch --progress --config webpack.js",
     "w": "yarn b webpackx.ts"
   }

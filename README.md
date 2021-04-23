@@ -15,8 +15,8 @@ Access Arena
 http://localhost:5566/
 ```
 
-Trigger a Send Message job
+Trigger a User Sign Up job
 
 ```
-yarn send-message
+yarn user-sign-up
 ```
